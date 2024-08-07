@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace EFScaffoldProj.Models;
+namespace EFScaffoldProj.Core.Models;
 
 public partial class Project
 {
@@ -10,6 +11,17 @@ public partial class Project
     public string Name { get; set; } = null!;
 
     public string? Description { get; set; }
+
+
+    public int StatusId { get; set; }
+
+
+    public virtual Status? Status { get; set; }
+
+
+    public int PriorityId { get; set; }
+
+    public virtual Priority? Priority { get; set; }
 
     public DateOnly? StartDate { get; set; }
 

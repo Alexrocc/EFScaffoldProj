@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace EFScaffoldProj.Models;
+namespace EFScaffoldProj.Core.Models;
 
 public partial class Role
 {

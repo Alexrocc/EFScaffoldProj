@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace EFScaffoldProj.Models;
+namespace EFScaffoldProj.Core.Models;
 
 public partial class Task
 {
@@ -11,9 +11,11 @@ public partial class Task
 
     public string? Description { get; set; }
 
-    public string? Status { get; set; }
+    public string? StatusId { get; set; }
+    public virtual Status? Status { get; set; }
 
-    public string? Priority { get; set; }
+    public int PriorityId { get; set; }
+    public virtual Priority? Priority { get; set; }
 
     public DateOnly? DueDate { get; set; }
 
