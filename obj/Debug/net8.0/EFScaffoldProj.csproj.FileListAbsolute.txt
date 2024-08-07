@@ -96,3 +96,4 @@ C:\Users\alero\Desktop\EFScaffoldProject\EFScaffoldProj\obj\Debug\net8.0\refint\
 C:\Users\alero\Desktop\EFScaffoldProject\EFScaffoldProj\obj\Debug\net8.0\EFScaffoldProj.pdb
 C:\Users\alero\Desktop\EFScaffoldProject\EFScaffoldProj\obj\Debug\net8.0\EFScaffoldProj.genruntimeconfig.cache
 C:\Users\alero\Desktop\EFScaffoldProject\EFScaffoldProj\obj\Debug\net8.0\ref\EFScaffoldProj.dll
+C:\Users\alero\Desktop\EFScaffoldProject\EFScaffoldProj\obj\Debug\net8.0\EFScaffoldProj.sourcelink.json
