@@ -58,6 +58,7 @@ public partial class PmsapiContext : DbContext
                 entity.HasIndex(e => e.StatusId, "status_id");
 
                 entity.HasIndex(e => e.PriorityId, "priority_id");
+                entity.HasIndex(e => e.Name).IsUnique();
 
                 entity.Property(e => e.Id)
                     .HasColumnType("int(11)")
@@ -65,14 +66,16 @@ public partial class PmsapiContext : DbContext
                 entity.Property(e => e.Description)
                     .HasMaxLength(255)
                     .HasColumnName("description");
-                entity.Property(e => e.EndDate).HasColumnName("end_date");
+                entity.Property(e => e.EndDate)
+                    .HasColumnName("end_date").IsRequired();
                 entity.Property(e => e.Name)
                     .HasMaxLength(100)
                     .HasColumnName("name");
                 entity.Property(e => e.ProjectCategoriesId)
                     .HasColumnType("int(11)")
                     .HasColumnName("project_categories_id");
-                entity.Property(e => e.StartDate).HasColumnName("start_date");
+                entity.Property(e => e.StartDate).IsRequired()
+                    .HasColumnName("start_date");
                 entity.Property(e => e.UsersManagerId)
                     .HasColumnType("int(11)")
                     .HasColumnName("users_manager_id");
@@ -84,19 +87,12 @@ public partial class PmsapiContext : DbContext
                     .HasColumnName("priority_id");
 
                 entity.HasOne(d => d.ProjectCategories).WithMany(p => p.Projects)
-                    .HasForeignKey(d => d.ProjectCategoriesId)
+                    .HasForeignKey(d => d.ProjectCategoriesId).IsRequired()
                     .HasConstraintName("projects_ibfk_1");
 
                 entity.HasOne(d => d.UsersManager).WithMany(p => p.Projects)
-                    .HasForeignKey(d => d.UsersManagerId)
+                    .HasForeignKey(d => d.UsersManagerId).IsRequired()
                     .HasConstraintName("projects_ibfk_2");
-
-                // entity.HasOne(d => d.Status).WithMany(p => p.Projects)
-                // .HasForeignKey(d => d.StatusId)
-                // .HasConstraintName("projects_ibfk_3");
-                // entity.HasOne(d => d.Priority).WithMany(p => p.Projects)
-                // .HasForeignKey(d => d.PriorityId)
-                // .HasConstraintName("projects_ibfk_4");
             });
 
             modelBuilder.Entity<ProjectCategory>(entity =>
