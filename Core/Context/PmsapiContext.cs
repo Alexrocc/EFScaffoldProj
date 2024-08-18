@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
-using Pomelo.EntityFrameworkCore.MySql.Scaffolding.Internal;
+﻿using Microsoft.EntityFrameworkCore;
 using EFScaffoldProj.Core.Models;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace EFScaffoldProj.Core.Context;
 
