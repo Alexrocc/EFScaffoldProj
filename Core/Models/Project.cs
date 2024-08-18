@@ -18,7 +18,6 @@ public partial class Project
 
     public virtual Status? Status { get; set; }
 
-
     public int PriorityId { get; set; }
 
     public virtual Priority? Priority { get; set; }
@@ -27,9 +26,9 @@ public partial class Project
 
     public DateOnly? EndDate { get; set; }
 
-    public int? ProjectCategoriesId { get; set; }
+    public int ProjectCategoriesId { get; set; }
 
-    public int? UsersManagerId { get; set; }
+    public int UsersManagerId { get; set; }
 
     public virtual ProjectCategory? ProjectCategories { get; set; }
 
