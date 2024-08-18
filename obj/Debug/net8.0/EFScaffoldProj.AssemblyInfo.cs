@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EFScaffoldProj")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9727f686d8be9c471a7153a919d91ecf590cf5b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b2711d709c4d1f85b234300694194f718676db5")]
 [assembly: System.Reflection.AssemblyProductAttribute("EFScaffoldProj")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EFScaffoldProj")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

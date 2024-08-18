@@ -11,7 +11,7 @@ public partial class Task
 
     public string? Description { get; set; }
 
-    public string? StatusId { get; set; }
+    public int StatusId { get; set; }
     public virtual Status? Status { get; set; }
 
     public int PriorityId { get; set; }

@@ -45,8 +45,6 @@ public partial class PmsapiContext : DbContext
             .HasCharSet("latin1");
         try
         {
-
-
             modelBuilder.Entity<Project>(entity =>
             {
                 entity.HasKey(e => e.Id).HasName("PRIMARY");

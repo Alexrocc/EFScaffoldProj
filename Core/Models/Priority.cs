@@ -6,7 +6,7 @@ public class Priority
 
     public int PriorityId { get; set; }
 
-    public int PriorityDef { get; set; }
+    public string PriorityDef { get; set; } = "";
 
     public virtual ICollection<Project> Projects { get; set; } = new List<Project>();
 
